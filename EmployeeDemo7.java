@@ -3,7 +3,7 @@ class Employee{
 	private String empName;
         void set(int empId,String empName){
 		this.empId = empId;
-		this.empName = empName
+		this.empName = empName;
 	}
 	void show(){
 		System.out.println(empId+" "+empName);
@@ -19,7 +19,7 @@ class Manager extends Employee{
 	}
 	void show(){
 		super.show();
-		System.out.println(ta+" "+da);
+		System.out.println(ta+" "+da);		
 	}
 }
 class EmployeeDemo7{
@@ -27,6 +27,5 @@ class EmployeeDemo7{
 		Manager m = new Manager();
 		m.set(101,"ram",9000,600);
 		m.show();
-		
 	}
 }
